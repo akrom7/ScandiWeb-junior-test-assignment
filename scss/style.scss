@@ -1,0 +1,47 @@
+div.products {
+    gap: 10px;
+
+    label.product {
+        width: calc(100% / 4 - 20px);
+        
+        div.content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div.products {
+        label.product {
+            width: calc(100% / 2 - 20px);
+        }
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    div.products {
+        label.product {
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+}
+
+.form-group {
+    margin-top: 20px;
+
+    label {
+        margin: 10px 0;
+    }
+}
+
+.switch-content .form-group {
+    display: none;
+}
